@@ -1,0 +1,35 @@
+body{
+    font-family: $font-family-base;
+    color: $link-color;
+}
+
+.header{
+    a{
+        color: $link-color;
+        font-size: $font-s;
+        text-decoration: none;
+    }
+    h1{
+        color: $link-color;
+        font-size: $font-m;
+    }
+}
+.header h1{
+    @include bluesize;
+}
+
+.footer {
+    @include bluesize;
+    @include name;
+}
+.main h1{
+    @include color(blue, 12px);
+}
+.content{
+    @include pad{
+        font-size: 15px;
+    }
+    @include mobile{
+        width: 100px;
+    }
+}
